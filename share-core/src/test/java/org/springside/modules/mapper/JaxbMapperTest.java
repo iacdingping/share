@@ -123,7 +123,7 @@ public class JaxbMapperTest {
 		assertThat(((Element) interests.elements().get(0)).getText()).isEqualTo("movie");
 	}
 
-	@XmlRootElement(namespace="http://iac.dp.test.user")
+	@XmlRootElement
 	// 指定子节点的顺序
 	@XmlType(propOrder = { "name", "interests" })
 	private static class User {
